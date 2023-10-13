@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+ 
+<h1> Survey Form</h1>
+  
+<!-- Create Form -->
+<form id="surveyForm">
+
+    <!-- Details -->
+    <div class="form-control">
+        <label for="name" id="label-name">
+           First Name
+        </label>
+
+        <!-- Input Type Text -->
+        <input type="text"
+               id="name"
+               placeholder="Enter your first name" />
+    </div>
+    <div class="form-control">
+        <label for="name" id="label-name">
+           Last Name
+        </label>
+        <!-- Input Type Text -->
+        <input type="text"
+               id="name"
+               placeholder="Enter your last name" />
+    </div>
+    <div class="form-control">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+    </div>
+
+    <div class="form-control">
+        <label for="email" id="label-email">
+            Email
+        </label>
+        <input type="email"
+        id="email"
+        placeholder="Enter your email" />
+</div>
+        <div class="form-control">
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select Country</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+                <option value="UK">India</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>
+                Describe your gender
+            </label>
+    
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Male</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">Female</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio"
+                       id="recommed-3"
+                       name="recommed">Others</input>
+            </label>
+       
+
+    <div class="form-control">
+        <label for="profession" id="label-profession">
+            Profession
+        </label>
+
+        <!-- Input Type Text -->
+        <input type="text"
+               id="profession"
+               placeholder="Enter your Profession" />
+    </div>
+    <div class="form-control">
+        <label for="mobile-number">
+           Mobile Number
+        </label>
+        <input type="tel" id="mobile" name="mobile" required>
+    </div>
+    
+    <div class="form-control">
+        <label for="comment">
+            Any comments or suggestions
+        </label>
+
+        <!-- multi-line text input control -->
+        <textarea name="comment" id="comment"
+            placeholder="Enter your comment here">
+        </textarea>
+    </div>
+
+    <!-- Multi-line Text Input Control -->
+    <div class="form-control">
+        <button type="button" id="submitBtn">Submit</button>
+        <button type="button" id="resetBtn">Reset</button>
+    </div>
+</form>
+       
+    
+    <script src="script.js"></script>
+</body>
+</html>
